@@ -159,9 +159,9 @@ class Solution(object):
 ```
 **Reference:**
 
-{% youtube g8bSdXCG-lA %}
+<div class="youtube" id="g8bSdXCG-lA"></div>
 
-{% youtube ZmnqCZp9bBs %}
+<div class="youtube" id="ZmnqCZp9bBs"></div>
 
 ---
 
