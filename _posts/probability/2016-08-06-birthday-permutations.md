@@ -13,16 +13,22 @@ Assume that there are 365 possible birthdays for each person(ignore leap years).
 For two people, it is...
 
 $$
-1 - \frac{365 \times 364}{365^2}
+\frac{365 \times 364}{365^2}
 $$
 
 For three people, it is...
 
 $$
-1 - \frac{365 \times 364 \times 363}{365^3}
+\frac{365 \times 364 \times 363}{365^3}
 $$
 
 For more people, it is...
+
+$$
+\frac{365 \times 364 \times \dotsm \times (365 - i + 1)}{365^i} \text{, where $i$ = 2, 3, ..., 365}
+$$
+
+So the probability that two people in the room will have the same birthday is...
 
 $$
 1 - \frac{365 \times 364 \times \dotsm \times (365 - i + 1)}{365^i} \text{, where $i$ = 2, 3, ..., 365}
@@ -62,7 +68,7 @@ def calc_prob(ppl_num):
 Let's Plot
 ----------
 
-From the chart we can see the probability that two people have same birthday is almost $$1$$ when there're more than $$100$$ people in a room. That's an different number than what I tempted to come up with at the beginning! It is tempting to guess that we would need about $$\frac{1}{2}$$ this number, or $$183$$.
+It is tempting to guess that we would need about $$\frac{1}{2}$$ this number, or $$183$$, but the answer is $$23$$. From the chart we can see the probability that two people have same birthday is almost $$1$$ when there're more than $$100$$ people in a room.
 
 ![...](/images/2016-08-06-birthday-permutations/fig-02.png)
 
