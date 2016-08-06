@@ -18,5 +18,7 @@ github_username:  boyw165
 markdown: kramdown
 
 gems:
+  - kramdown
+  - jekyll-watch
   - jekyll-postfiles
   - jekyll-coffeescript
