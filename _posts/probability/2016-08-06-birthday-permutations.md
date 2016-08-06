@@ -64,5 +64,5 @@ Let's Plot
 
 From the chart we can see the probability that two people have same birthday is almost $$1$$ when there're more than $$100$$ people in a room. That's an different number than what I tempted to come up with at the beginning! It is tempting to guess that we would need about $$\frac{1}{2}$$ this number, or $$183$$.
 
-![...](fig-02.png)
+![...](/images/2016-08-06-birthday-permutations/fig-02.png)
 
