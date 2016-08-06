@@ -72,3 +72,5 @@ It is tempting to guess that we would need about $$\frac{1}{2}$$ this number, or
 
 ![...](/images/2016-08-06-birthday-permutations/fig-02.png)
 
+[[code](https://github.com/boyw165/my-probability-practice/blob/master/permutations-and-combinations/ex-birthday.py)]
+
