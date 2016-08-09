@@ -46,8 +46,6 @@ Number of people, Probability that two ppl have same birthday
 25                0.568700
 ```
 
-There you go the solution. And it's such a practical problem that could happen in any party!
-
 Let's Code
 ----------
 
@@ -65,12 +63,14 @@ def calc_prob(ppl_num):
     return 1. - prob_no_dup
 ```
 
-Let's Plot
+And the plot is like:
+
+![...](/images/2016-08-06-birthday-permutations/fig-02.png)
+
+Conclusion
 ----------
 
 It is tempting to guess that we would need about $$\frac{1}{2}$$ this number, or $$183$$, but the answer is $$23$$. From the chart we can see the probability that two people have same birthday is almost $$1$$ when there're more than $$100$$ people in a room.
-
-![...](/images/2016-08-06-birthday-permutations/fig-02.png)
 
 [[code](https://github.com/boyw165/my-probability-practice/blob/master/permutation-birthday-problem/birthday.py)]
 
