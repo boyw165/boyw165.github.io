@@ -4,6 +4,9 @@ title: Tips of Numpy
 categories: Machine Learning
 ---
 
+* TOC
+{:toc}
+
 Shuffle Multiple Arrays
 -----------------------
 
@@ -11,7 +14,7 @@ Given two identical size of `ndarray`, how to shuffle the two arrays and keep el
 
 `Numpy` provides the `ndarray` a special ability, called `index array`. You could put an array in the square bracket, `[]`, to get the permutation.
 
-#### For example
+**For example**
 
 ```python
 a = np.arange(10) # -> array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
@@ -21,7 +24,7 @@ c = a[[3, 2, 1, 0]] # -> array([3, 2, 1, 0])
 
 So you could use `numpy.random.permutation` function to generate the *index array* and use it to shuffle multiple arrays.
 
-#### For example
+**For example**
 
 ```python
 def randomize(a, b):
@@ -33,14 +36,18 @@ def randomize(a, b):
     return shuffled_a, shuffled_b
 ```
 
+<br/>
+
 ---
 
+<br/>
+ 
 Boolean Statements
 ------------------
 
 Boolean statments are commonly used in combination with the `and` operator and the `or` operator.
 
-#### For example
+**For example**
 
 ```python
 # Creating an image.
@@ -60,4 +67,5 @@ img2[compound_index] = 0
 And let's see the figure.
 
 ![...](/images/2016-07-09-tips-of-numpy/ex-02-fig-01.png)
+
 
