@@ -57,10 +57,7 @@ img2 = np.copy(img1)
 img2[compound_index] = 0
 ```
 
-The `img1`:
+And let's see the figure.
 
 ![...](/images/2016-07-09-tips-of-numpy/ex-02-fig-01.png)
 
-The `img2`:
-
-![...](/images/2016-07-09-tips-of-numpy/ex-02-fig-02.png)
