@@ -32,3 +32,33 @@ def randomize(a, b):
     shuffled_b = labels[permutation]
     return shuffled_a, shuffled_b
 ```
+
+Boolean Statements
+------------------
+
+Boolean statments are commonly used in combination with the `and` operator and the `or` operator.
+
+#### For example
+
+```python
+# Creating an image.
+img1 = np.zeros([20, 20]) + 3
+img1[4:-4, 4:-4] = 6
+img1[7:-7, 7:-7] = 9
+
+# Ley's filter out all values larger than 2 and less than 6.
+index1 = img1 > 2
+index2 = img1 < 6
+compound_index = index1 & index2
+
+img2 = np.copy(img1)
+img2[compound_index] = 0
+```
+
+The `img1`:
+
+![...](/images/2016-07-09-tips-of-numpy/ex-02-fig-01.png)
+
+The `img2`:
+
+![...](/images/2016-07-09-tips-of-numpy/ex-02-fig-02.png)
