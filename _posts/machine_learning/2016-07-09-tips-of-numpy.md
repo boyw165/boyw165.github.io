@@ -33,6 +33,8 @@ def randomize(a, b):
     return shuffled_a, shuffled_b
 ```
 
+---
+
 Boolean Statements
 ------------------
 
