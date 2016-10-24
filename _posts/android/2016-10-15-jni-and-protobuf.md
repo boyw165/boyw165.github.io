@@ -101,33 +101,25 @@ We designed the directory by just following the AndroidStudio convention. The br
 And the followings are the snapshots of the root `build.gradle` and the library `build.gradle`.
 
 #### The root `build.gradle`
+
+We use the gradle of stable version of `2.1.3` and experimental version of `0.7.3` at the same time. Amazing huh!? They don't conflict with each other.
+
 ```gradle
-apply plugin: 'com.android.application'
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
 
-android {
-    compileSdkVersion 24
-    buildToolsVersion "24.0.1"
-
-    defaultConfig {
-        applicationId "com.cardinalblue.algorithm"
-        minSdkVersion 15
-        targetSdkVersion 24
-        versionCode 1
-        versionName "1.0"
+buildscript {
+    repositories {
+        jcenter()
     }
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-        }
-    }
-}
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.1.3'
+        classpath "com.android.tools.build:gradle-experimental:0.7.3"
 
-dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:24.2.1'
-    compile project(':algorithms-lib')
-    testCompile 'junit:junit:4.12'
+        classpath 'com.google.protobuf:protobuf-gradle-plugin:0.8.0'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
 }
 ```
 
