@@ -311,6 +311,8 @@ I personally think the `reference table overflow` is a killing pitfall. In our c
 Good to see the protobuf library
 --------------------------------
 
+![](/images/2016-10-15-jni-and-protobuf/fig-03.png)
+
 There are many popular serialization/deserialization libraries like:
 
 - JSON [[github](https://github.com/open-source-parsers/jsoncpp)]
